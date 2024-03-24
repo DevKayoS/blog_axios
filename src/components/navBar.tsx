@@ -19,6 +19,11 @@ export function NavBar(){
             className="border p-2 rounded-full text-2xl hover:bg-slate-50 hover:text-black"
           >Novo Post</Link>
         </li>
+        <li>
+          <Link to={'/admin'}
+            className="text-slate-50/60 p-2 text-2xl  hover:text-slate-50"
+          >Gerenciar</Link>
+        </li>
       </ul>
       
     </nav>
