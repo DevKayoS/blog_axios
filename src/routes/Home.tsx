@@ -1,6 +1,8 @@
 import {useState, useEffect, ReactNode, Key} from "react"
 import {Link} from "react-router-dom"
 import axios from "axios"
+import { blogFetch } from "../axios/config"
+
 
 export function Home(){
 
@@ -15,7 +17,7 @@ type PostProps ={
 
   const getPost = async() => {
     try {
-      const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+      const response = await blogFetch.get("/posts")
 
       const data = response.data
 
@@ -40,7 +42,7 @@ type PostProps ={
           <h1 className="text-slate-50 font-semibold">{post.title}</h1>
           <p >{post.body}</p>
           <Link to={`/post${post.id}`}
-          className="hover:bg-slate-50 border  rounded-full  p-2  flex w-32 mb-2"
+          className="hover:bg-slate-50 border items-center rounded-full  p-2  flex w-32 mb-2"
           >Ler mais</Link>
         </li>
         )}
