@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {App} from './app.tsx'
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import './index.css'
 import { Home } from './routes/Home.tsx'
 import { NewPost } from './routes/NewPost.tsx'
+import { Post } from './routes/Post.tsx'
+import { Admin } from './routes/admin.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/new",
         element: <NewPost/>
+      },
+      {
+        path: "/posts/:id",
+        element: <Post/>
+      },
+      {
+        path: "/admin",
+        element: <Admin/>
       }
     ]
   }
