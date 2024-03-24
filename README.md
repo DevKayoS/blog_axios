@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Blog React + axios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse Projeto é uma aplicação com o intuito de estudar mais profundamente o React-router-dom e o axios, fazendo assim uma aplicação com crud completa, com todas as requisições sendo utilizadas, porém pelo fato da API ser da JSONplaceholder e ser publica, nenhum dos dados são alterados.
+##
+![image](https://github.com/DevKayoS/blog_axios/assets/157029608/c3c65f45-4bad-42b2-8963-573cbdfcf80a)
 
-Currently, two official plugins are available:
+Essa é a rota principal do projeto, na qual fica a home e todos os posts do blog, na qual é feita uma requisição get usando axios. 
+##
+![image](https://github.com/DevKayoS/blog_axios/assets/157029608/e0ce8369-a12f-4b97-b008-ca9f2a178375)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ao clicar em "Ler Mais" é encaminhado para a rota onde é possivel visualizar somente aquele post selecionado, na qual é puxado pelo id do post. Na qual está sendo representada na imagem acima
 
-## Expanding the ESLint configuration
+##
+![image](https://github.com/DevKayoS/blog_axios/assets/157029608/421d44b2-3d32-403d-9093-da2ac55aa114)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Nessa rota é feita a criação de novos posts no blog.
 
-- Configure the top-level `parserOptions` property like this:
+##
+![image](https://github.com/DevKayoS/blog_axios/assets/157029608/56a2862b-c3cd-4c47-832c-defdbb4f8757)
+Nessa página temos a rota da parte administrativa onde é possível excluir um post ou editar um post.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+##
+![image](https://github.com/DevKayoS/blog_axios/assets/157029608/34c28e5e-7993-41fb-9058-7ee48f0a25f7)
+Ao clicar em "Editar post" na página de gerenciamento é encaminhado para essa rota onde é puxado o título do post selecionado e o conteúdo do post, na qual é possivel atualizar um post especifico.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##
+### Tecnologias usadas:
+  * React;
+  * Typescript;
+  * Axios;
+  * API do JSONPlaceholder;
+  * React-router-dom;
+  * Tailwindcss.
+
