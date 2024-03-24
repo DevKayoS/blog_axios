@@ -8,6 +8,7 @@ import { Home } from './routes/Home.tsx'
 import { NewPost } from './routes/NewPost.tsx'
 import { Post } from './routes/Post.tsx'
 import { Admin } from './routes/admin.tsx'
+import { AttPost } from './routes/attPost.tsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin/>
+      },
+      {
+        path: "/attPost/:id",
+        element: <AttPost/>
       }
     ]
   }

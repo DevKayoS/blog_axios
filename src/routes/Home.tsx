@@ -41,7 +41,7 @@ type PostProps ={
           <h1 className="text-slate-50 font-semibold">{post.title}</h1>
           <p >{post.body}</p>
           <Link to={`/posts/${post.id}`}
-          className="hover:bg-slate-50 border items-center rounded-full  p-2  flex w-32 mb-2"
+          className="hover:bg-slate-50 border justify-center items-center rounded-full  p-2  flex w-32 mb-2"
           >Ler mais</Link>
         </li>
         )}
